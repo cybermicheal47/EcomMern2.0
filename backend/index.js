@@ -21,7 +21,7 @@ const https = require("https");
 app.use(cors());
 app.use(compression());
 app.use(express.json()); // Ensure this middleware is set up before defining routes
-const __dirname = path.resolve();
+
 // Set static folder for production
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "..", "frontend", "dist")));
