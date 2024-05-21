@@ -1,0 +1,8 @@
+.chartcontainer {
+  margin: 20px;
+  background-color: white;
+  -webkit-box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.77);
+  box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.77);
+  padding: 20px;
+  border-radius: 12px;
+}

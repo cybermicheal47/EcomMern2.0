@@ -1,0 +1,51 @@
+.sidebarcontainer {
+  flex: 1;
+  height: 100vh;
+  background-color: rgb(219, 218, 216);
+
+  position: sticky;
+  top: 50px;
+}
+
+.sidecontainermain {
+  padding: 10px;
+}
+
+.linkt {
+  text-decoration: none;
+}
+
+.sidecontainermenu {
+  margin-bottom: 10px;
+}
+
+.sidetitle {
+  font-size: 16px;
+}
+
+.sidelist {
+  list-style: none;
+  padding: 5px;
+}
+
+.sidelistitem {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.sidelistitem:hover,
+.sidelistitem.active {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.muicon {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.linkstyle {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,43 @@
+.largewidget {
+  flex: 2;
+  padding: 24px;
+  -webkit-box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.77);
+  box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.77);
+  background-color: white;
+}
+.largewidgetTitle {
+  font-size: bold;
+}
+.largewidgetImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.largewidgetTable {
+  width: 100%;
+  border-spacing: 20px;
+  text-align: center;
+}
+
+.largewidgetButton {
+  padding: 10px;
+  border: none;
+  border-radius: 30%;
+}
+.largewidgetButton.Approved {
+  background-color: green;
+}
+.largewidgetButton.Declined {
+  background-color: red;
+}
+.largewidgetButton.Pending {
+  background-color: grey;
+}
+
+.largewidgetUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

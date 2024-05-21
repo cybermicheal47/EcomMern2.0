@@ -1,0 +1,14 @@
+.contain {
+  display: flex;
+  margin-top: 10px;
+}
+.otherpages {
+  flex: 4;
+  /* taking four times the space  of the sidebar , although the sidebar is set to flex:1  */
+  background-color: green;
+}
+
+.linkstyle {
+  text-decoration: none;
+  color: inherit;
+}

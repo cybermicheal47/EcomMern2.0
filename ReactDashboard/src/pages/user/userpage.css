@@ -1,0 +1,150 @@
+.userpage {
+  flex: 4;
+  margin-left: 14px;
+}
+
+.usertitlecontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usertitle {
+  font-weight: 700px;
+}
+.usercreate {
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  padding: 10px;
+  width: 90px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+}
+.usercontainer {
+  display: flex;
+  gap: 10px;
+}
+.usershow {
+  flex: 1;
+  -webkit-box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.77);
+  box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.77);
+  padding: 20px;
+}
+.userupdate {
+  flex: 2;
+  -webkit-box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.77);
+  box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.77);
+  padding: 20px;
+}
+.userpageImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userpageshow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.userpageTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.userpageUsernam {
+  font-weight: 650;
+}
+
+.userpageUserTitle {
+  font-weight: 300;
+}
+
+.userpageTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.userShowTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(175, 170, 170);
+}
+
+.userShowInfo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  color: #444;
+}
+
+.userShowIcon {
+  font-size: 16px !important;
+}
+
+.userShowInfoTitle {
+  margin-left: 10px;
+}
+
+.imguserupdate {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.userpageform {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userpageupdatetitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+.updateuseritem {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.updateuseritem > label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.userpageupdateinput {
+  width: 300px;
+  height: 30px;
+
+  border: 1px solid grey;
+}
+
+.userupdatebutton {
+  padding: 6px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.uploaduserfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.uploaduserfileicon {
+  cursor: pointer;
+}
+
+.rightuserupdate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

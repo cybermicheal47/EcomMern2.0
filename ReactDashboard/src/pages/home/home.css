@@ -1,0 +1,9 @@
+.homecontainer {
+  flex: 4;
+  /* taking four times the space  of the sidebar , although the sidebar is set to flex:1  */
+  background-color: green;
+}
+.homewidgets {
+  display: flex;
+  margin: 20px;
+}
