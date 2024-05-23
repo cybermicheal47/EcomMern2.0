@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import axios from "axios";
 import { useSelector } from "react-redux";
+import { publicRequest } from "../requestaxios";
 
 const PaymentForm = () => {
   const [email, setEmail] = useState("");
@@ -14,12 +15,9 @@ const PaymentForm = () => {
   const handlePaymentSuccess = async (response) => {
     try {
       // Send the Paystack response to your server for verification
-      const serverResponse = await axios.post(
-        "http://localhost:3500/api/paystack/verify",
-        {
-          reference: response.reference,
-        }
-      );
+      const serverResponse = await publicRequest.post("paystack/verify", {
+        reference: response.reference,
+      });
 
       // Handle the server response as needed
       console.log(serverResponse.data);

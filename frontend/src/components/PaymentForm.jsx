@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import axios from "axios";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
-import { useDispatch } from "react-redux";
 import { clearCart } from "../redux/cartRedux";
+import { publicRequest } from "../requestaxios";
 
 const FormWrapper = styled.div`
   padding: 20px;
@@ -57,16 +56,13 @@ const PaymentForm = () => {
 
   const handlePayment = async () => {
     try {
-      const response = await axios.post(
-        "https://ecomappi.onrender.com/paystack",
-        {
-          email,
-          amount: cart.total,
-          billing_address: billingAddress,
-        }
-      );
+      const response = await publicRequest.post("/paystack", {
+        email,
+        amount: cart.total,
+        billing_address: billingAddress,
+      });
       // Handle the Paystack response
-      const { authorization_url, access_code, reference } = response.data.data;
+      const { authorization_url } = response.data.data;
       console.log(authorization_url);
 
       // Redirect the user to the Paystack authorization URL
@@ -75,7 +71,7 @@ const PaymentForm = () => {
       // Dispatch the clearCart action after successful redirection
       dispatch(clearCart());
     } catch (err) {
-      setError(err.response.data.error);
+      setError(err.response?.data?.error || "Something went wrong");
     }
   };
 
